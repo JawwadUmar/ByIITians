@@ -28,9 +28,6 @@ interface SocialLinkProps {
 }
 
 const Footer = ({ t }: { t: TFunction }) => {
-  // const handleChange = (language: string) => {
-  //   i18n.changeLanguage(language);
-  // };
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
@@ -46,9 +43,16 @@ const Footer = ({ t }: { t: TFunction }) => {
     );
   };
 
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id) as HTMLDivElement;
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
-      <FooterSection>
+      <FooterSection id ="footer">
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
@@ -83,7 +87,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
-              <Large to="/">{t("About")}</Large>
+              <Large to="/" onClick={()=>scrollTo('about')}>{t("About")}</Large>
               <Large to="/">{t("Blog (Coming Soon)")}</Large>
               <AnchorLarge href="https://forms.gle/VSMWbm8Qu9dVEjeK8" target="_blank" rel="noopener noreferrer">{t("Careers")}</AnchorLarge>
             </Col>

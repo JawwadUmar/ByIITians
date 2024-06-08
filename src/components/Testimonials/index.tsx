@@ -24,7 +24,7 @@ const Testimonial = ({ title }: MiddleBlockProps) => {
   };
 
   return (
-    <MiddleBlockSection>
+    <MiddleBlockSection id = "testimonial">
       <Slide direction="up" triggerOnce>
         <Row justify="center" align="middle">
           <ContentWrapper>

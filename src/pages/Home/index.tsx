@@ -31,7 +31,7 @@ const Home = () => {
         title={ProductContent.title}
         content={ProductContent.text}
         icon="waving.svg"
-        id="product"
+        id="about"
       />
       <MiddleBlock
         title={MiddleBlockContent.title}
@@ -44,7 +44,7 @@ const Home = () => {
         content={AboutContent.text}
         section={AboutContent.section}
         icon="graphs.svg"
-        id="about"
+        id="boost"
       />
       <ContentBlock
         direction="right"
@@ -61,7 +61,7 @@ const Home = () => {
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
-        id="contact"
+        id="demoform"
       />
     </Container>
   );
