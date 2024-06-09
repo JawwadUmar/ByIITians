@@ -64,7 +64,7 @@ const ContentBlock = ({
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => scrollTo("demoform")}
+                            onClick={() => window.open("https://drive.google.com/file/d/1U1kEwEWL5H4D0sF8SreYuMrmca13LK_T/view", "_blank")}
                           >
                             {t(item.title)}
                           </Button>

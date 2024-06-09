@@ -88,6 +88,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
               <Large to="/" onClick={()=>scrollTo('about')}>{t("About")}</Large>
+              <Large to="/" onClick={() => window.open("https://drive.google.com/file/d/1U1kEwEWL5H4D0sF8SreYuMrmca13LK_T/view", "_blank")}>{t("Brochure")}</Large>
               <Large to="/">{t("Blog (Coming Soon)")}</Large>
               <AnchorLarge href="https://forms.gle/VSMWbm8Qu9dVEjeK8" target="_blank" rel="noopener noreferrer">{t("Careers")}</AnchorLarge>
             </Col>
