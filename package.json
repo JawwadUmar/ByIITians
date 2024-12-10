@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.1",
     "@mantine/core": "^7.7.1",
     "@types/node": "^15.14.9",
     "@types/react": "^17.0.68",
@@ -23,6 +24,7 @@
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
+    "react-sticky-el": "^2.1.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.11",
     "typescript": "^4.9.5"
