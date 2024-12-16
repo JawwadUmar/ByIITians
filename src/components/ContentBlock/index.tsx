@@ -64,7 +64,18 @@ const ContentBlock = ({
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => window.open("https://drive.google.com/file/d/1U1kEwEWL5H4D0sF8SreYuMrmca13LK_T/view", "_blank")}
+                            onClick={
+                              () => {
+                                if(id === 0){
+                                  scrollTo("demoform")
+                                }
+
+                                else{
+                                  window.open("https://drive.google.com/file/d/1U1kEwEWL5H4D0sF8SreYuMrmca13LK_T/view", "_blank")
+                                }
+                              }
+                              
+                            }
                           >
                             {t(item.title)}
                           </Button>
