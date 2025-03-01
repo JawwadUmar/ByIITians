@@ -14,6 +14,29 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import './styles.css';
 
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
+const gtag_report_conversion = (url?: string) => {
+  if (typeof window !== "undefined" && window.gtag) {
+    const callback = () => {
+      if (url) {
+        window.location.href = url;
+      }
+    };
+
+    window.gtag("event", "conversion", {
+      send_to: "AW-16881296214/58pyCM6Cu58aENbG0PE-",
+      value: 1.0,
+      currency: "INR",
+      event_callback: callback,
+    });
+  }
+};
+
 const Contact = ({ title, content, id, t }: ContactProps) => {
 
 
@@ -81,6 +104,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
       // Clear form fields
       setFormData({ name: '', email: '', phone: '' });
       handleOpenModal("Thank You!", "Your response has been received. We will reach out to you within the next 24 hours.");
+
+      gtag_report_conversion();
 
 
     } catch (error) {
