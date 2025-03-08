@@ -96,10 +96,15 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
       setFormData({ name: '', email: '', phone: '' });
       handleOpenModal("Thank You!", "Your response has been received. We will reach out to you within the next 24 hours.");
 
-      if (isGoogleAdsUser()) {
-        window.gtag('event', 'conversion', {
-          'send_to': 'AW-16881296214/Conversion_ID'
+      if (window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-16881296214",
+          event_category: "form",
+          event_label: "contact_form_submission",
+          value: 1, 
         });
+      } else {
+        console.warn("Google Tag (gtag) is not loaded");
       }
 
 
