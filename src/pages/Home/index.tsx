@@ -6,7 +6,12 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import TestimonialContent from "../../content/TestimonialContent.json"
+import OurPricing from "../../content/OurPrices.json"
+// import PricingCard from "../../components/Pricing/PricingCard";
+// import PricingCardContainer from "../../components/Pricing/PricingCard";
+// import PricingCards from "../../components/Pricing/PricingCards";
 
+const PricingCards = lazy(() => import("../../components/Pricing/PricingCards"));
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -56,6 +61,10 @@ const Home = () => {
      
       <Testimonial
       title={TestimonialContent.title}
+      />
+
+      <PricingCards
+      title={OurPricing.title}
       />
 
       <Contact
