@@ -65,6 +65,7 @@ const Home = () => {
 
       <PricingCards
       title={OurPricing.title}
+      id = "pricing"
       />
 
       <Contact

@@ -56,10 +56,11 @@ const RecordedLectures = styled.span`
 
 interface MiddleBlockProps {
   title: string;
+  id?: string;
 }
 
 const currencyMap: { [key: string]: string } = {
-  AE: "AED",
+  AE: "AED ",
   IN: "₹",
   US: "$",
   GB: "£",
@@ -76,9 +77,8 @@ const exchangeRates: { [key: string]: number } = {
 
 
 
-const PricingCards = ({ title }: MiddleBlockProps) => {
+const PricingCards = ({ title, id }: MiddleBlockProps) => {
   const [currency, setCurrency] = useState<string>("AED");
-  // const [currencySymbol, setCurrencySymbol] = useState<string>("د.إ");
   const [conversionRate, setConversionRate] = useState<number>(1);
   
   // Keep base prices constant (in AED)
