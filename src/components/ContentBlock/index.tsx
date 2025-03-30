@@ -71,7 +71,8 @@ const ContentBlock = ({
                                 }
 
                                 else{
-                                  window.open("https://drive.google.com/file/d/1U1kEwEWL5H4D0sF8SreYuMrmca13LK_T/view", "_blank")
+                                  // window.open("https://drive.google.com/file/d/1U1kEwEWL5H4D0sF8SreYuMrmca13LK_T/view", "_blank")
+                                  window.open("https://s3.us-east-1.amazonaws.com/byiitians.com/By+IITians+Brochure.pdf", "_blank")
                                 }
                               }
                               
