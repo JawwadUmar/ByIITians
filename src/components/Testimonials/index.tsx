@@ -49,21 +49,22 @@ const Testimonial = ({ title }: MiddleBlockProps) => {
                 </CarouselItem>
                 <CarouselItem>
                   <TestimonialCard
-                    name="Imogen"
+                    name="Mariyam"
                     className="British Curriculum"
                     message="At first, I only took Maths at BI, but I was blown away by how great the teachers were. They inspired me to dive into other science subjects. Their guidance surpassed any online resources, truly helping me excel academically."
-                    imageUrl="/img/testimonials/3.png"
+                    imageUrl="/img/testimonials/7.png"
                   />
                 </CarouselItem>
                
                 <CarouselItem>
                   <TestimonialCard
-                    name="Max"
-                    className="IGCSE"
+                    name="Paul"
+                    className="IB"
                     message="Since starting classes at ByIITians, my understanding in maths and computer science have improved significantly. These subjects were always challenging for me. ByIITians has truly been a game changer, and I am incredibly grateful for their support."
-                    imageUrl="/img/testimonials/5.png"
+                    imageUrl="/img/testimonials/8.png"
                   />
                 </CarouselItem>
+
               </CarouselContainer>
             </Col>
           </ContentWrapper>
