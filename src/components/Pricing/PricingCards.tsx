@@ -114,7 +114,7 @@ const PricingCards = ({ title, id }: MiddleBlockProps) => {
         {currency}{25 * convert(basePricePerClassMonth)}
       </HighlightText>
     </>,
-    "Recorded Lectures",
+    "Session Recording Included",
   ];  
 
   const feature2 = [
@@ -124,13 +124,13 @@ const PricingCards = ({ title, id }: MiddleBlockProps) => {
        {currency}{50 * convert(basePricePerClassTwoMonth)}
      </HighlightText>
    </>,
-    "Recorded Lectures",
+    "Session Recording Included",
   ];
 
   const feature3 = [
     <>Start with as low as <PriceHighlight>3 Classes</PriceHighlight></>,
     "Pay for only what you need",
-    "Recorded Lectures"
+    "Session Recording Included"
   ];
 
   return (
