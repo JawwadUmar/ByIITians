@@ -98,10 +98,10 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
 
       if (window.gtag) {
         window.gtag("event", "conversion", {
-          send_to: "AW-16881296214",
+          send_to: "AW-16881296214/2vW2COyAu6YaENbG0PE-",
           event_category: "form",
           event_label: "contact_form_submission",
-          value: 1, 
+          value: 1,
         });
       } else {
         console.warn("Google Tag (gtag) is not loaded");
