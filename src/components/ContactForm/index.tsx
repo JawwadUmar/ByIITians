@@ -29,7 +29,7 @@ const gtag_report_conversion = (url?: string) => {
     };
 
     window.gtag("event", "conversion", {
-      send_to: "AW-16881296214/58pyCM6Cu58aENbG0PE-",
+      send_to: "AW-16881296214/2vW2COyAu6YaENbG0PE-",
       value: 1.0,
       currency: "INR",
       event_callback: callback,
